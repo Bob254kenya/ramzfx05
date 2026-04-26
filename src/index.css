@@ -4,67 +4,43 @@
 
 @layer base {
   :root {
-    /* Core Colors - Cyberpunk Dark Theme */
-    --background: 222 47% 8%;      /* Deeper dark background */
-    --foreground: 210 20% 92%;     /* Crisp off-white text */
-    
-    --card: 225 30% 12%;           /* Dark elevated surface */
+    --background: 222 47% 8%;
+    --foreground: 210 20% 92%;
+    --card: 225 30% 12%;
     --card-foreground: 210 20% 92%;
-    
     --popover: 225 30% 12%;
     --popover-foreground: 210 20% 92%;
-    
-    /* Primary - Electric Cyan */
     --primary: 175 100% 45%;
     --primary-foreground: 222 47% 8%;
-    
-    /* Secondary - Vibrant Purple */
     --secondary: 280 80% 60%;
     --secondary-foreground: 210 20% 92%;
-    
-    /* Muted - Slate Gray */
     --muted: 217 25% 25%;
     --muted-foreground: 215 20% 70%;
-    
-    /* Accent - Neon Pink */
     --accent: 330 85% 60%;
     --accent-foreground: 210 20% 92%;
-    
-    /* Destructive - Red Alert */
     --destructive: 0 85% 65%;
     --destructive-foreground: 210 20% 92%;
-    
-    /* Border & Input - Cyberpunk Glow */
     --border: 217 25% 30%;
     --input: 217 25% 20%;
     --ring: 175 100% 45%;
-    
-    --radius: 0.25rem;             /* Sharper corners for terminal feel */
-    
-    /* Trading Specific Colors */
-    --profit: 130 80% 55%;         /* Bright neon green */
+    --radius: 0.25rem;
+    --profit: 130 80% 55%;
     --profit-foreground: 130 80% 10%;
-    --loss: 0 85% 60%;             /* Vibrant red */
+    --loss: 0 85% 60%;
     --loss-foreground: 0 85% 10%;
-    --warning: 45 100% 55%;        /* Electric yellow */
+    --warning: 45 100% 55%;
     --warning-foreground: 45 100% 10%;
-    
-    /* Chart Colors - Cyberpunk Palette */
-    --chart-1: 175 100% 45%;       /* Cyan */
-    --chart-2: 280 80% 60%;        /* Purple */
-    --chart-3: 330 85% 60%;        /* Pink */
-    --chart-4: 45 100% 55%;        /* Yellow */
-    --chart-5: 195 100% 50%;       /* Bright Blue */
-    
-    /* Parity Colors */
+    --chart-1: 175 100% 45%;
+    --chart-2: 280 80% 60%;
+    --chart-3: 330 85% 60%;
+    --chart-4: 45 100% 55%;
+    --chart-5: 195 100% 50%;
     --even: 175 100% 45%;
     --even-foreground: 222 47% 8%;
     --odd: 280 80% 60%;
     --odd-foreground: 210 20% 92%;
     --signal: 330 85% 60%;
     --signal-foreground: 210 20% 92%;
-    
-    /* Sidebar - Darker Terminal */
     --sidebar-background: 222 47% 5%;
     --sidebar-foreground: 210 20% 92%;
     --sidebar-primary: 175 100% 45%;
@@ -74,61 +50,44 @@
     --sidebar-border: 217 25% 20%;
     --sidebar-ring: 175 100% 45%;
     --sidebar: 225 30% 10%;
-    
-    /* Typography - Modern & Clean with INCREASED SIZES */
     --font-sans: 'DM Sans', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     --font-mono: 'JetBrains Mono', 'Space Mono', 'SF Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
     --font-display: 'Space Grotesk', 'Inter', ui-sans-serif, system-ui;
-    
-    /* Shadows - Glow Effects */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.4);
     --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.5);
-    
-    /* Spacing */
     --spacing: 0.25rem;
   }
   
-  /* Light Theme Option - Clean Modern White */
   .light {
     --background: 210 20% 98%;
     --foreground: 222 47% 11%;
-    
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
-    
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    
     --primary: 175 80% 35%;
     --primary-foreground: 210 20% 98%;
-    
     --secondary: 280 70% 50%;
     --secondary-foreground: 210 20% 98%;
-    
     --muted: 210 15% 90%;
     --muted-foreground: 222 47% 30%;
-    
     --accent: 330 75% 50%;
     --accent-foreground: 210 20% 98%;
-    
     --destructive: 0 75% 55%;
     --destructive-foreground: 210 20% 98%;
-    
     --border: 214 20% 85%;
     --input: 214 20% 85%;
     --ring: 175 80% 35%;
-    
     --profit: 130 75% 45%;
     --profit-foreground: 210 20% 98%;
     --loss: 0 75% 55%;
     --loss-foreground: 210 20% 98%;
     --warning: 40 95% 50%;
     --warning-foreground: 210 20% 98%;
-    
     --sidebar-background: 210 20% 95%;
     --sidebar-foreground: 222 47% 11%;
     --sidebar-primary: 175 80% 35%;
@@ -281,7 +240,6 @@
 }
 
 @layer utilities {
-  /* Trading Colors */
   .text-profit {
     color: hsl(var(--profit));
     font-weight: 700;
@@ -315,7 +273,6 @@
     background-color: hsl(var(--warning) / 0.1);
   }
   
-  /* Glow Effects - Cyberpunk Style */
   .glow-primary {
     box-shadow: 0 0 20px hsl(var(--primary) / 0.5), 0 0 40px hsl(var(--primary) / 0.3);
   }
@@ -329,7 +286,6 @@
     box-shadow: 0 0 20px hsl(var(--accent) / 0.4);
   }
   
-  /* Text Glow - BOLDER text with glow */
   .text-glow-primary {
     text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
     font-weight: 800;
@@ -339,7 +295,6 @@
     font-weight: 800;
   }
   
-  /* Gradients */
   .gradient-primary {
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
   }
@@ -350,7 +305,6 @@
     background: linear-gradient(135deg, hsl(222 47% 8%), hsl(225 30% 12%));
   }
   
-  /* Terminal Grid Pattern */
   .trading-grid {
     background-image: 
       linear-gradient(hsl(var(--border) / 0.2) 1px, transparent 1px),
@@ -358,13 +312,11 @@
     background-size: 30px 30px;
   }
   
-  /* Subtle Dot Pattern */
   .dot-pattern {
     background-image: radial-gradient(hsl(var(--border) / 0.15) 1px, transparent 1px);
     background-size: 20px 20px;
   }
   
-  /* Scanner Line Animation */
   @keyframes scanner {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100vh); }
@@ -388,7 +340,6 @@
     pointer-events: none;
   }
   
-  /* Hide Scrollbar but keep functionality */
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -397,7 +348,6 @@
     display: none;
   }
   
-  /* Custom Scrollbar - Terminal Style */
   .custom-scrollbar::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -417,7 +367,6 @@
     background: hsl(var(--primary) / 0.8);
   }
   
-  /* Blinking Cursor Effect */
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
@@ -427,7 +376,6 @@
     animation: blink 1s step-end infinite;
   }
   
-  /* Card Hover Effects */
   .card-hover {
     @apply transition-all duration-300;
   }
@@ -437,7 +385,6 @@
     box-shadow: 0 8px 25px -5px rgb(0 0 0 / 0.3);
   }
   
-  /* Data Tables - INCREASED & BOLDER */
   .data-table th {
     @apply font-mono;
     font-size: 14px;
@@ -453,7 +400,6 @@
     font-feature-settings: "tnum" on, "lnum" on;
   }
   
-  /* Badges - BOLDER */
   .badge-profit {
     @apply bg-profit/10 text-profit font-mono;
     font-size: 13px;
@@ -478,14 +424,12 @@
     border-radius: 0.25rem;
   }
   
-  /* Glass Morphism Effects */
   .glass {
     background: hsl(var(--card) / 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
   
-  /* Number Animations */
   @keyframes countUp {
     from {
       opacity: 0;
@@ -501,7 +445,6 @@
     animation: countUp 0.5s ease-out forwards;
   }
   
-  /* Pulse Ring */
   @keyframes pulse-ring {
     0% {
       transform: scale(0.8);
@@ -527,7 +470,6 @@
     opacity: 0;
   }
   
-  /* Status Indicators - BOLDER text */
   .status-online {
     @apply relative inline-flex items-center;
     font-weight: 700;
@@ -539,7 +481,6 @@
     animation: pulse-ring 1.5s infinite;
   }
   
-  /* Utility classes for font weight */
   .font-semibold {
     font-weight: 600;
   }
@@ -556,7 +497,6 @@
     font-weight: 900;
   }
   
-  /* Increased text size utilities */
   .text-xs {
     font-size: 13px !important;
   }
@@ -593,7 +533,6 @@
     font-size: 60px !important;
   }
   
-  /* Bolder link hover states */
   .link-bold {
     font-weight: 700;
     text-decoration: none;
@@ -605,7 +544,6 @@
     text-shadow: 0 0 4px currentColor;
   }
   
-  /* Number ticker styling - LARGE & BOLD */
   .ticker-number {
     font-family: var(--font-mono);
     font-size: 32px;
@@ -622,7 +560,6 @@
     letter-spacing: -0.03em;
   }
   
-  /* Dashboard card titles */
   .card-title {
     font-family: var(--font-display);
     font-size: 20px;
@@ -630,7 +567,6 @@
     letter-spacing: -0.01em;
   }
   
-  /* Metric values */
   .metric-value {
     font-family: var(--font-mono);
     font-size: 28px;
@@ -646,7 +582,6 @@
   }
 }
 
-/* Print Styles */
 @media print {
   .no-print {
     display: none;
